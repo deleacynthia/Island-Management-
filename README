@@ -1,0 +1,32 @@
+// Delea Cynthia Andreea, 312AB
+
+							Tema 2
+
+	Structuri:
+	- Resursa - stocheaza numele si cantitatea unei resurse
+	- Island - stocheaza datele despre o insula, cum ar fi numele si resursele
+	acesteia
+
+	Pentru citirea input-ului, ma folosesc de doua functii, citireInsule, pentru
+citirea datelor despre o insula ( nume si resurse ) si citireLegaturi, pentru
+citirea matricei de adiacenta corespunzatoare costurilor dintre insule.
+	Apoi parcurg comenzile, si in functie de acestea, efectuez anumite operatii:
+	- conexiune - verifica daca exista o legatura intre doua insule in matricea
+de adiacenta
+	- legatura - afiseaza toate insulele cu care insula dorita are o legatura,
+conform matricei de adiacenta
+	- adauga_zbor - creeaza o noua legatura intre doua insule, adaugand costul
+acesteia in matricea de adiacenta
+	- anulare_zbor - sterge o legatura intre doua insule, facand 0 costul
+acesteia in matricea de adiacenta
+	- max_resurse - se salveaza toate resursele, chiar si duplicatele, din
+intregul arhipelag, intr-un vector, iar apoi acesta este sortat, preluandu-se
+doar resursele unice din acesta
+	- max_cantitate - se verifica pentru fiecare insula care este cantitatea
+maxima a resursei cautate, apoi se afiseaza toate insulele cu respectiva
+cantitate
+	- drum_zbor - calculeaza drumul de cost minim dintre cele doua insule
+aplicand algoritmul dijsktra pentru gasirea caii minime, iar apoi se afiseaza
+insulele prin care trece acest drum
+	- timp_zbor - folosindu-se de acelasi principiu ca si drum_zbor, doar ca
+in loc sa se afiseze insulele, se afiseaza timpul total de zbor al drumului.
